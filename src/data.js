@@ -1,0 +1,63 @@
+export const categories = [
+  "Housing",
+  "Food",
+  "Transport",
+  "Utilities",
+  "Health",
+  "Shopping",
+  "Salary",
+  "Freelance",
+  "Investments",
+  "Other",
+];
+
+export const seedTransactions = [
+  {
+    id: "seed-1",
+    type: "income",
+    title: "Salary",
+    category: "Salary",
+    amount: 5200,
+    date: "2026-07-01",
+  },
+  {
+    id: "seed-2",
+    type: "expense",
+    title: "Apartment rent",
+    category: "Housing",
+    amount: 1450,
+    date: "2026-07-02",
+  },
+  {
+    id: "seed-3",
+    type: "expense",
+    title: "Groceries",
+    category: "Food",
+    amount: 184.2,
+    date: "2026-07-03",
+  },
+  {
+    id: "seed-4",
+    type: "expense",
+    title: "Fuel",
+    category: "Transport",
+    amount: 72.5,
+    date: "2026-07-04",
+  },
+  {
+    id: "seed-5",
+    type: "income",
+    title: "Design project",
+    category: "Freelance",
+    amount: 850,
+    date: "2026-07-07",
+  },
+  {
+    id: "seed-6",
+    type: "expense",
+    title: "Electric bill",
+    category: "Utilities",
+    amount: 138.6,
+    date: "2026-07-11",
+  },
+];

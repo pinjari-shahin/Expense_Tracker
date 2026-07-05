@@ -1,0 +1,138 @@
+ 1. package.json
+This is the most important configuration file in a React project.
+It tells:
+Project name
+Version
+Which libraries are installed
+Commands to run the project
+It is like the identity card of your project.
+ Without package.json, React doesn't know what libraries your project needs.
+ 2. package-lock.json
+This file is created automatically.
+You never write it yourself.
+It remembers the exact versions of every package.
+Example
+Suppose
+React version = 19.0.1
+Tomorrow a new version comes.
+Your project still installs exactly
+19.0.1
+because package-lock.json remembers it.
+3. index.html
+
+This is the first file the browser opens.
+When you visit
+
+localhost:5173
+the browser first loads
+
+index.html
+Inside it, you'll usually find:
+HTML
+<div id="root"></div>
+This empty <div> is where React displays your entire application.
+Think of it as an empty TV screen where React shows everything.
+
+4. main.jsx
+This is the starting point of your React application.
+It starts React and loads the main component.
+Usually it contains something like:
+JSX
+import App from "./App"
+This means
+"Show the App component."
+It also imports
+JSX
+ 
+ styles.css
+so your application gets its design.
+5. App.jsx
+This is the heart of your project.
+Almost everything you see in the browser comes from here.
+For an Expense Tracker, it might display:
+App title
+Income
+Expenses
+Balance
+Buttons
+Forms
+Charts
+Tables
+When someone asks,
+"Where is your React application?"
+The answer is usually:
+App.jsx
+6. styles.css
+This file controls the appearance of your app.
+It decides:
+Colors
+Fonts
+Margins
+Padding
+Button styles
+Card styles
+Layout
+Example:
+CSS
+button{
+background:blue;
+color:white;
+}
+Without this file, your app would still work but look plain.
+7. data.js
+This file stores data.
+For example
+JavaScript
+const categories=[
+"Food",
+"Travel",
+"Shopping"
+]
+or
+JavaScript
+const expenses=[
+{
+amount:500,
+category:"Food"
+}
+]
+Instead of writing data inside App.jsx, it's kept here to keep the code organized.
+
+8. utils.js
+Utils means Utilities.
+This file contains helper functions.
+Example:
+JavaScript
+calculateTotal()
+or
+JavaScript
+formatCurrency()
+Instead of writing the same code again and again, you write it once here and reuse it.
+Think of it as a toolbox.
+
+9. firebase.js
+This connects your project to Firebase.
+Firebase is a cloud service where your app can store data online.
+Inside this file, you'll usually see:
+Firebase configuration
+API Key
+Project ID
+Database connection
+Without this file, your app cannot communicate with Firebase.
+
+10. .env.example
+.env means Environment Variables.
+This file stores values like:
+API Key
+Project ID
+Database URL
+Instead of writing them directly in your code, they're stored separately.
+This makes the project easier to configure and safer to share.
+
+11. .gitignore
+Git tracks files for version control.
+Sometimes you don't want Git to upload certain files, such as:
+node_modules
+.env
+Temporary files
+Those filenames are listed in .gitignore, so Git skips them.
