@@ -171,13 +171,12 @@ export default function App() {
     });
     pdf.save("expense-report.pdf");
   }
-
   const incomeExpenseData = {
     labels: ["Income", "Expenses"],
     datasets: [
       {
         data: [totals.income, totals.expense],
-        backgroundColor: ["#198754", "#d9480f"],
+        backgroundColor: ["chocolate", "mediumturquoise"],
         borderWidth: 0,
       },
     ],
