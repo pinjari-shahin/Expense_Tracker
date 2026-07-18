@@ -176,7 +176,7 @@ export default function App() {
     datasets: [
       {
         data: [totals.income, totals.expense],
-        backgroundColor: ["chocolate", "mediumturquoise"],
+        backgroundColor: ["#ffb6c1", "mediumturquoise"],
         borderWidth: 0,
       },
     ],
@@ -188,15 +188,15 @@ export default function App() {
       {
         label: "Income",
         data: monthly.map(([, value]) => value.income),
-        borderColor: "#198754",
-        backgroundColor: "rgba(25, 135, 84, 0.16)",
+        borderColor: "#ffb6c1",
+        backgroundColor: "rgba(255, 182, 193, 0.16)",
         tension: 0.35,
       },
       {
         label: "Expenses",
         data: monthly.map(([, value]) => value.expense),
-        borderColor: "#d9480f",
-        backgroundColor: "rgba(217, 72, 15, 0.16)",
+        borderColor: "mediumturquoise",
+        backgroundColor: "rgba(72, 209, 204, 0.16)",
         tension: 0.35,
       },
     ],
